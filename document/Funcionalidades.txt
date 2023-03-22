@@ -1,0 +1,42 @@
+#Funcionalidades do Website
+
+Em Simulação de API:
+
+- Registrar utilizadores; [Essencial](Feito)
+- Listar utilizadores; [Iimportante](Feito)
+- Autenticar utilizadores; [Essencial](Feito)
+- Cadastrar tipos de despesas; [Essencial](Feito)
+- Listar tipos de despesas; [Essencial](Feito)
+- Registrar Eventos; [Essencial](Feito)
+- Listar Eventos; [Essencial](Feito)
+- Excluir Eventos; [Essencial]
+- Registrar Gastos; [Essencial](Feito)
+- Listar gatos por periodos; [Essencial]
+- Registrar rendimento mensal; [Essencial](Feito)
+
+
+Recursos gratuitos:
+
+Registro de usuários
+Listagem de usuários
+Autenticação de usuários
+Cadastro de tipos de despesas
+Listagem de tipos de despesas
+Registro de eventos
+Listagem de eventos
+Exclusão de eventos
+Registro de gastos
+Listagem de gastos por período
+Registro de rendimento mensal
+Visualização da poupança em função do rendimento e gastos mensais
+Recursos Premium:
+
+Relatórios avançados de gastos e rendimentos
+Gráficos e estatísticas personalizadas
+Notificações automáticas de gastos e vencimentos de contas
+Acesso ao aplicativo móvel
+Suporte ao cliente prioritário
+Armazenamento de dados em nuvem
+Integração com outras plataformas financeiras
+Acesso a conteúdo exclusivo de educação financeira
+Recomendações personalizadas de investimento

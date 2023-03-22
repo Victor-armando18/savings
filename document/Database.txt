@@ -1,0 +1,50 @@
+
+DROP DATABASE financas;
+
+CREATE DATABASE financas;
+
+USE financas;
+
+CREATE TABLE utilizador(
+ codigo CHAR(14) NOT NULL,
+ nome VARCHAR(150) NOT NULL,
+ senha CHAR(50) NOT NULL,
+ data_registro DATE NOT NULL,
+ hora_registro TIME NOT NULL,
+ PRIMARY KEY(codigo)
+)ENGINE = INNODB;
+
+CREATE TABLE evento(
+numero INT NOT NULL AUTO_INCREMENT,
+utilizador CHAR(14) NOT NULL,
+nome VARCHAR(150) NOT NULL,
+tipo ENUM('ENTRADA', 'SAIDA') NOT NULL,
+PRIMARY KEY(numero),
+CONSTRAINT fk_utilizador_evento FOREIGN KEY(utilizador) REFERENCES utilizador(codigo) ON DELETE CASCADE ON UPDATE CASCADE
+)ENGINE = INNODB;
+
+CREATE TABLE movimento(
+numero_evento INT NOT NULL,
+`data` DATE NOT NULL,
+valor FLOAT(9,2) NOT NULL,
+ data_registro DATE NOT NULL,
+ hora_registro TIME NOT NULL,
+PRIMARY KEY(numero_evento, `data`),
+CONSTRAINT fk_numero_evento_movimento FOREIGN KEY(numero_evento) REFERENCES evento(numero) ON DELETE CASCADE ON UPDATE CASCADE
+)ENGINE = INNODB;
+
+
+view rendimento(
+ano,
+mes,
+valor
+)
+
+
+view poupanca(
+ano,
+mes,
+rendimento,
+gasto,
+valor
+)
